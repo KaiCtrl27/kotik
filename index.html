@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#fef6f3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Люблю ❤">
+<title>С днём рождения, любимка❤</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/scenes.css">
+<link rel="stylesheet" href="css/cake.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-heart">❤</div>
+</div>
+
+<div class="bg-hearts" aria-hidden="true">
+  <span style="left:7%;  animation-duration:12s; animation-delay:0s">❤</span>
+  <span style="left:23%; animation-duration:15s; animation-delay:2s">❤</span>
+  <span style="left:44%; animation-duration:13s; animation-delay:5s">❤</span>
+  <span style="left:66%; animation-duration:16s; animation-delay:1s">❤</span>
+  <span style="left:83%; animation-duration:11s; animation-delay:4s">❤</span>
+  <span style="left:94%; animation-duration:14s; animation-delay:3s">❤</span>
+</div>
+
+<main class="stage">
+
+  <section class="scene active" data-scene="1">
+    <h2 class="card-title" id="meetTitle">Однажды кошечка<br>встретила своего котика</h2>
+
+    <div class="cats-photo-wrap" id="catsPhotoWrap">
+      <div class="photo-frame">
+        <div class="photo-heart">❤</div>
+        <div class="cats-photo" id="catsPhoto">
+          <img src="image/cats.png" id="catsImg">
+        </div>
+        <div class="photo-caption" id="meetCaption">Ты мой любимый котик ❤</div>
+      </div>
+    </div>
+
+    <p class="hint" id="meetHint">Нажми на нас ❤</p>
+    <button class="continue-btn" id="toScene2" hidden aria-label="Дальше">
+      <img src="image/paw.png">
+    </button>
+  </section>
+
+  <section class="scene" data-scene="2">
+    <h2 class="card-title" id="letterHeader">Тебе письмо, мяу ❤</h2>
+
+    <div class="letter-stage" id="letterStage">
+      <div class="envelope-wrap" id="envelopeWrap">
+        <div class="envelope" id="envelope">
+          <div class="env-back"></div>
+          <div class="env-front"></div>
+          <div class="env-flap"></div>
+          <div class="env-seal">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+              <defs>
+                <radialGradient id="sealGrad" cx="35%" cy="28%" r="80%">
+                  <stop offset="0%" stop-color="#ffc0ca"/>
+                  <stop offset="55%" stop-color="#ffa9b5"/>
+                  <stop offset="100%" stop-color="#df5e67"/>
+                </radialGradient>
+              </defs>
+              <path d="M30 54 C30 54 4 37 4 21 C4 11 12 4 20 4 C24.5 4 28 6 30 10 C32 6 35.5 4 40 4 C48 4 56 11 56 21 C56 37 30 54 30 54 Z" fill="url(#sealGrad)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="letter-card" id="letterCard">
+        <div class="letter-inner">
+          <div class="letter-date" id="letterDate">18 октября</div>
+          <h3 class="letter-title" id="letterTitle"></h3>
+          <div class="letter-text" id="letterText"></div>
+          <div class="letter-sign" id="letterSign"></div>
+          <span class="letter-paw">🐾</span>
+        </div>
+
+        <div class="letter-polaroid">
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="image/photo-letter.png" loading="lazy">
+            </div>
+            <div class="polaroid-cap" id="letterPhotoCap">Мур ❤</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint" id="letterHint">Нажми на конверт</p>
+    <button class="continue-btn" id="toScene3" hidden aria-label="Дальше">
+      <img src="image/paw.png">
+    </button>
+  </section>
+
+  <section class="scene" data-scene="3">
+    <h2 class="card-title" id="cakeTitle">Задуй свечи, котёнок ❤</h2>
+
+    <div class="cake">
+      <div class="cake-tier" data-tier="3">
+        <div class="candles" data-count="3"></div>
+        <div class="tier t3"></div>
+      </div>
+      <div class="cake-tier" data-tier="2">
+        <div class="candles" data-count="2"></div>
+        <div class="tier t2"></div>
+      </div>
+      <div class="cake-tier" data-tier="1">
+        <div class="candles" data-count="2"></div>
+        <div class="tier t1"></div>
+      </div>
+      <div class="plate"></div>
+    </div>
+
+    <p class="hint" id="cakeHint">Нажми на каждую свечу и загадай желание</p>
+    <button class="continue-btn" id="toScene4" hidden aria-label="Дальше">
+      <img src="image/paw.png">
+    </button>
+  </section>
+
+  <section class="scene" data-scene="4">
+    <h2 class="card-title" id="fortuneTitle">Кот предсказатель</h2>
+
+    <div class="fortune-stage" id="fortuneStage">
+      <div class="fortune-paper" id="fortunePaper">
+        <div class="fortune-text" id="fortuneText"></div>
+      </div>
+
+      <img src="image/fortune-cat.png" class="fortune-cat-img" id="fortuneCatImg" loading="lazy">
+      <p class="fortune-hint" id="fortuneHint">Нажми на кота, он видит будущее</p>
+    </div>
+
+    <button class="continue-btn" id="toScene5" hidden aria-label="Дальше">
+      <img src="image/paw.png">
+    </button>
+  </section>
+
+  <section class="scene" data-scene="5">
+    <h2 class="card-title" id="roomTitle">Наша будущая комната</h2>
+
+    <div class="room-stage" id="roomStage">
+      <img src="image/room.png" class="room-img" id="roomImg" loading="lazy">
+
+      <div class="room-note" id="roomNote">
+        <button class="note-close" id="noteClose" aria-label="Закрыть">✕</button>
+        <div class="note-closed">
+          <span>Записка ❤</span>
+        </div>
+        <div class="note-open">
+          <p id="roomNoteText"></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint" id="roomHint">Нажми на фото</p>
+    <button class="continue-btn" id="toScene6" hidden aria-label="Дальше">
+      <img src="image/paw.png">
+    </button>
+  </section>
+
+  <section class="scene" data-scene="6">
+    <div class="photos" style="margin:0 0 22px">
+      <div class="polaroid" style="--rot:-5deg">
+        <div class="polaroid-img">
+          <img src="image/meow.png" loading="lazy">
+        </div>
+        <div class="polaroid-cap">любимый</div>
+      </div>
+      <div class="polaroid" style="--rot:5deg">
+        <div class="polaroid-img">
+          <img src="image/moore.png" loading="lazy">
+        </div>
+        <div class="polaroid-cap">навсегда</div>
+      </div>
+    </div>
+
+    <div class="final-message" id="finalMessage">Я тебя очень сильно люблю, котик ❤</div>
+
+    <div class="reason-box"><p class="reason" id="reason"></p></div>
+    <button class="paw-btn" id="reasonBtn" aria-label="Показать причину">
+      <img src="image/paw.png">
+    </button>
+    <p class="hint" id="reasonHint">Нажми на лапку</p>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Закрыть">✕</button>
+  <div class="lb-inner">
+    <div class="lb-frame">
+      <div class="lb-img" id="lbImg"></div>
+      <div class="lb-cap" id="lbCap"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/cfg.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/buzz.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/meet.js"></script>
+<script src="js/letter.js"></script>
+<script src="js/cake.js"></script>
+<script src="js/fortune.js"></script>
+<script src="js/room.js"></script>
+<script src="js/end.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

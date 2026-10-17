@@ -1,0 +1,252 @@
+@media (hover: none) and (pointer: coarse){
+  .continue-btn:hover{transform:none}
+  .cats-photo-wrap:hover{transform:none}
+  .polaroid:hover{transform:rotate(var(--rot, 0deg))}
+  .candle:hover{filter:none}
+  .fortune-cat-img:hover{transform:none}
+
+  .continue-btn,
+  .paw-btn{
+    min-width:56px;
+    min-height:56px;
+  }
+
+  .candle::before{
+    left:-16px;right:-16px;top:-22px;bottom:-22px;
+  }
+  .note-close,
+  .lb-close{
+    min-width:44px;
+    min-height:44px;
+  }
+
+  .letter-inner,
+  .note-open{
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior:contain;
+  }
+}
+
+@media (max-width:430px){
+  .stage{
+    padding:
+      calc(22px + var(--safe-top))
+      calc(16px + var(--safe-right))
+      calc(22px + var(--safe-bottom))
+      calc(16px + var(--safe-left));
+  }
+  .photos{gap:10px}
+  .candle{width:12px}
+
+  .letter-stage{min-height:min(500px, 68vh)}
+  .letter-inner{
+    padding:20px 18px 55px;
+    border-radius:12px;
+  }
+  .letter-inner::before{inset:6px}
+  .letter-date{font-size:10px;margin-bottom:6px;letter-spacing:.2em}
+  .letter-title{font-size:17px;line-height:1.18;margin-bottom:10px}
+  .letter-text{font-size:12.5px;line-height:1.5;margin-bottom:8px}
+  .letter-text p{margin-bottom:8px}
+  .letter-sign{font-size:12px;margin-top:6px}
+
+  .letter-polaroid{bottom:-25px;right:-10px}
+  .letter-polaroid .polaroid{width:80px}
+}
+
+@media (max-width:340px){
+
+  .card-title{font-size:17px;line-height:1.2}
+  .card-sub{font-size:12px}
+  .hint{font-size:10px;letter-spacing:.12em}
+
+  .continue-btn{width:56px;height:56px;margin-top:16px}
+  .continue-btn img{width:38px;height:38px}
+  .paw-btn{width:56px;height:56px;margin-top:16px}
+  .paw-btn img{width:38px;height:38px}
+  .preloader-heart{font-size:44px}
+
+  .stage{padding:16px 10px 24px}
+
+  .cats-photo-wrap{width:min(260px,88vw)}
+  .photo-frame{padding:12px 12px 54px}
+  .photo-heart{font-size:28px;top:-8px;right:-8px}
+  .photo-caption{font-size:12px;height:54px;padding:0 12px}
+
+  .polaroid{width:min(48vw,120px);padding:5px 5px 18px}
+
+  .letter-stage{min-height:420px}
+  .envelope{width:min(280px,90vw)}
+  .env-seal{width:48px;height:48px}
+  .letter-inner{
+    max-width:340px;
+    padding:16px 14px 50px;
+    border-radius:12px;
+  }
+  .letter-inner::before{inset:6px}
+  .letter-date{font-size:9px;margin-bottom:6px}
+  .letter-title{font-size:15px;margin-bottom:8px}
+  .letter-text{font-size:11.5px;line-height:1.48;margin-bottom:6px}
+  .letter-text p{margin-bottom:6px}
+  .letter-sign{font-size:11px;margin-top:4px}
+
+  .letter-polaroid{bottom:-20px;right:-5px;transform:rotate(-8deg)}
+  .letter-card.shown .letter-polaroid{transform:rotate(-8deg) scale(1)}
+  .letter-polaroid .polaroid{width:70px}
+
+  .cake{margin-top:60px;transform:scale(.92)}
+
+  .fortune-paper{max-width:280px;padding:0 18px}
+  .fortune-text{font-size:13px}
+  .fortune-paper.show{padding:16px 18px}
+
+  .room-note{width:88px;height:88px}
+  .note-closed{font-size:11px;padding:8px 6px;letter-spacing:.04em}
+  .note-open{padding:16px 14px}
+  .note-open p{font-size:12px}
+  .note-close{width:28px;height:28px;font-size:13px;top:6px;right:6px}
+
+  .final-message{font-size:18px;margin-bottom:16px}
+  .reason-box{min-height:110px;padding:18px 14px}
+  .reason{font-size:13px}
+
+  .lb-frame{padding:10px 10px 44px}
+  .lb-cap{font-size:13px;bottom:12px}
+  .lb-close{width:38px;height:38px;font-size:16px;top:10px;right:10px}
+}
+
+@media (min-width:341px) and (max-width:380px){
+  .card-title{font-size:18px}
+  .continue-btn{width:60px;height:60px;margin-top:18px}
+  .continue-btn img{width:42px;height:42px}
+  .paw-btn{width:60px;height:60px;margin-top:18px}
+  .paw-btn img{width:42px;height:42px}
+  .preloader-heart{font-size:52px}
+
+  .stage{padding:20px 12px 30px}
+
+  .cats-photo-wrap{width:min(290px,86vw)}
+  .photo-frame{padding:14px 14px 60px}
+  .photo-heart{font-size:34px;top:-10px;right:-10px}
+  .photo-caption{font-size:13px;height:60px}
+
+  .polaroid{width:min(46vw,130px)}
+
+  .letter-stage{min-height:460px}
+  .envelope{width:min(320px,88vw)}
+  .env-seal{width:54px;height:54px}
+  .letter-inner{max-width:420px;padding:18px 16px 55px}
+  .letter-title{font-size:16px;margin-bottom:9px}
+  .letter-text{font-size:12px;line-height:1.5}
+  .letter-sign{font-size:12px;margin-top:6px}
+
+  .letter-polaroid{bottom:-25px;right:-10px;transform:rotate(-9deg)}
+  .letter-card.shown .letter-polaroid{transform:rotate(-9deg) scale(1)}
+  .letter-polaroid .polaroid{width:75px}
+
+  .cake{margin-top:66px}
+
+  .fortune-paper{max-width:300px}
+
+  .room-note{width:100px;height:100px}
+  .note-closed{font-size:12px;padding:10px 8px}
+  .note-open{padding:20px 16px}
+  .note-close{width:30px;height:30px;font-size:14px;top:8px;right:8px}
+
+  .final-message{font-size:20px}
+
+  .lb-frame{padding:12px 12px 50px}
+  .lb-cap{font-size:14px;bottom:14px}
+  .lb-close{width:40px;height:40px;font-size:17px}
+}
+
+@media (max-height:700px) and (orientation:portrait){
+  .stage{
+    padding-top:calc(12px + var(--safe-top));
+    padding-bottom:calc(12px + var(--safe-bottom));
+  }
+  .cake{margin-top:60px;transform:scale(.92)}
+  .letter-stage{min-height:min(420px, 60vh)}
+  .letter-inner{padding:16px 14px 50px}
+  .letter-date{font-size:10px;margin-bottom:6px}
+  .letter-title{font-size:16px;margin-bottom:8px}
+  .letter-text{font-size:12px;line-height:1.48}
+  .letter-text p{margin-bottom:7px}
+  .letter-sign{font-size:12px;margin-top:5px}
+  .room-stage{max-width:min(420px,90vw)}
+  .final-message{margin-bottom:16px}
+}
+
+@media (orientation:landscape) and (max-height:500px){
+  .stage{padding:10px 20px;align-items:center}
+
+  .card-title{font-size:16px;margin-bottom:6px}
+  .card-sub{display:none}
+  .hint{margin-top:8px;font-size:9px}
+
+  .cats-photo-wrap{width:min(200px,30vw)}
+  .photo-frame{padding:10px 10px 44px}
+  .photo-heart{font-size:26px;top:-8px;right:-8px}
+  .photo-caption{height:44px;font-size:12px}
+  .photos{margin:8px 0 0}
+
+  .letter-stage{min-height:260px}
+  .envelope{width:min(240px,40vw)}
+  .env-seal{width:44px;height:44px}
+  .letter-inner{
+    max-width:440px;
+    padding:14px 18px 40px;
+  }
+  .letter-date{font-size:9px;margin-bottom:4px}
+  .letter-title{font-size:14px;margin-bottom:6px}
+  .letter-text{font-size:11px;line-height:1.45;margin-bottom:6px}
+  .letter-text p{margin-bottom:5px}
+  .letter-sign{font-size:11px;margin-top:4px}
+
+  .letter-polaroid{bottom:-18px;right:-5px;transform:rotate(-7deg)}
+  .letter-card.shown .letter-polaroid{transform:rotate(-7deg) scale(1)}
+  .letter-polaroid .polaroid{width:60px}
+
+  .cake{margin-top:40px;transform:scale(.72)}
+
+  .fortune-stage{max-width:min(340px,45vw)}
+  .fortune-paper.show{padding:14px 18px;margin-bottom:10px}
+  .fortune-text{font-size:13px}
+
+  .room-stage{max-width:min(360px,50vw)}
+  .room-note{width:80px;height:80px}
+  .note-closed{font-size:10px;padding:6px 4px}
+  .note-open{padding:14px 12px}
+  .note-open p{font-size:11px}
+  .note-close{width:24px;height:24px;font-size:12px;top:4px;right:4px}
+
+  .scene[data-scene="6"] .photos{margin:0 0 8px}
+  .polaroid{width:min(14vw,90px)}
+  .final-message{font-size:18px;margin:0 0 12px}
+  .reason-box{min-height:80px;padding:14px 16px;margin-bottom:12px}
+  .reason{font-size:12px}
+
+  .continue-btn{width:52px;height:52px;margin-top:12px}
+  .continue-btn img{width:36px;height:36px}
+  .paw-btn{width:60px;height:60px;margin-top:12px}
+  .paw-btn img{width:42px;height:42px}
+
+  .lb-inner{max-width:min(360px,60vh)}
+  .lb-frame{padding:10px 10px 44px}
+  .lb-cap{font-size:13px;bottom:12px}
+  .lb-close{width:40px;height:40px;font-size:16px}
+}
+
+@media (min-width:600px) and (hover:hover){
+  .continue-btn:hover{transform:scale(1.06)}
+  .cats-photo-wrap:hover{transform:translateY(-4px) scale(1.01)}
+  .polaroid{width:min(22vw,130px)}
+  .polaroid:hover{transform:rotate(0deg) scale(1.06);z-index:20}
+  .fortune-cat-img:hover{transform:scale(1.02)}
+  .candle:hover{filter:brightness(1.08)}
+}
+
+@media (min-width:900px){
+  .scene{max-width:620px}
+  .letter-inner{max-width:520px}
+}
